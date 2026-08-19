@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jie (Jessica) Bian</title>
+<meta name="description" content="Jie (Jessica) Bian — PhD Researcher in Generative AI and AI Engineer, specializing in LLMs and RAG systems.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR: left logo / right links, plain split bar -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="logo">Jie Bian</a>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#technologies">Skills</a>
+      <a href="#learning">Learning</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">&#9789;</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+  </div>
+
+  <div class="nav-mobile" id="navMobile">
+    <a href="#about">About</a>
+    <a href="#technologies">Skills</a>
+    <a href="#learning">Learning</a>
+    <a href="#projects">Projects</a>
+    <a href="#publications">Publications</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO: single centered column, small avatar inline, no split portrait panel -->
+<section id="hero" class="hero">
+  <div class="hero-inner">
+    <div class="avatar-ring"><span>JB</span></div>
+    <p class="eyebrow">Oslo, Norway</p>
+    <h1>Jie (Jessica) Bian</h1>
+    <div class="role-rotator"><span id="roleText">AI Engineer</span></div>
+    <p class="hero-desc">I build LLM-powered applications and RAG-based systems, turning AI research into products people actually use — with a full-stack background spanning .NET/C# and modern AI infrastructure.</p>
+
+    <div class="cta-row">
+      <a href="#projects" class="btn btn-primary">View Work</a>
+    </div>
+  </div>
+</section>
+
+<main>
+
+  <!-- FEATURES: concise summary of the core offer before supporting detail -->
+  <section id="features" class="section">
+    <h2 class="section-title">What I Do</h2>
+    <div class="numbered-list">
+      <div class="numbered-item">
+        <span class="numbered-index">01</span>
+        <div>
+          <h3>Research to Product</h3>
+          <p>Turning generative AI research into deployed systems that people use, not just proofs of concept.</p>
+        </div>
+      </div>
+      <div class="numbered-item">
+        <span class="numbered-index">02</span>
+        <div>
+          <h3>RAG &amp; LLM Systems</h3>
+          <p>Building retrieval pipelines, evaluation harnesses, and multi-provider LLM infrastructure.</p>
+        </div>
+      </div>
+      <div class="numbered-item">
+        <span class="numbered-index">03</span>
+        <div>
+          <h3>Full-Stack Delivery</h3>
+          <p>Backend systems in .NET/C# and Python, paired with frontend work across Angular and modern JavaScript.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT: horizontal credential strip + full-width row timeline -->
+  <section id="about" class="section">
+    <h2 class="section-title">About</h2>
+
+    <div class="credential-strip">
+      <div class="credential-badge">PhD</div>
+      <div class="credential-text">
+        <div class="credential-degree">Ph.D. in Informatics &middot; University of Oslo</div>
+        <div class="credential-desc">Research focused on generative AI, LLMs, and RAG systems — building production infrastructure to make AI research usable at scale.</div>
+      </div>
+      <a href="#publications" class="credential-link">Publications &#8594;</a>
+    </div>
+
+    <h3 class="subsection-title">Research Projects</h3>
+    <div class="industry-project-list">
+      <article class="industry-project">
+        <h3>Design Decision Rationale Extraction</h3>
+        <p class="row-org">University of Oslo</p>
+        <p>NLP and retrieval methods for linking Internet-standard design decisions to the discussions and rationale behind them, from dataset construction through grounded explanation.</p>
+        <a href="#publications" class="demo-link">View publications &#8594;</a>
+      </article>
+      <article class="industry-project">
+        <h3>Automated Fact Verification &amp; Misinformation Detection</h3>
+        <p class="row-org">Institute for Basic Science</p>
+        <p>NLP pipelines for assessing news claims, using summarisation to surface supporting and contradicting evidence for veracity classification.</p>
+        <a href="https://pr.ibs.re.kr/handle/8788114/15897" target="_blank" rel="noopener noreferrer" class="demo-link">View paper &#8599;</a>
+      </article>
+    </div>
+
+    <h3 class="subsection-title">Industry Projects</h3>
+    <div class="industry-project-list">
+      <article class="industry-project">
+        <h3>ESKA Analytics</h3>
+        <p class="row-org">Eskadenia Software</p>
+        <p>An analytics and reporting product that helps insurance and billing teams turn operational data into actionable insights through dashboards, reports, and trend analysis.</p>
+        <p class="tech-stack">Angular, Node.js, C#/WebAPI2, PySpark, ElasticSearch, MongoDB, Oracle</p>
+        <a href="https://eskadenia.com/security-and-analytics" target="_blank" rel="noopener noreferrer" class="demo-link">View product &#8599;</a>
+      </article>
+      <article class="industry-project">
+        <h3>TecDoc Catalogue</h3>
+        <p class="row-org">TecAlliance GmbH Asia</p>
+        <p>A cross-platform catalogue for global automotive-parts reference data, serving TecDoc, Bosch, and Schaeffler across iOS, Android, and desktop.</p>
+        <p class="tech-stack">AngularJS, ASP.NET MVC, Microsoft SQL Server</p>
+        <a href="https://www.tecalliance.net/tecdoc-catalogue/" target="_blank" rel="noopener noreferrer" class="demo-link">View product &#8599;</a>
+      </article>
+      <article class="industry-project">
+        <h3>ESKA Carenet HIS</h3>
+        <p class="row-org">Eskadenia Software</p>
+        <p>A hospital information system supporting electronic medical records, appointments, billing, and insurance administration.</p>
+        <p class="tech-stack">WebForms, C#, Oracle</p>
+        <a href="https://eskadenia.com/healthcare?mnuId=63" target="_blank" rel="noopener noreferrer" class="demo-link">View product &#8599;</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGIES: text-forward tag lists, grouped, stacked full width -->
+  <section id="technologies" class="section alt-bg">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="tag-groups">
+      <div class="tag-group">
+        <span class="tag-group-label">Languages</span>
+        <div class="tag-row">
+          <span class="tag">Python</span>
+          <span class="tag">C#</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">R</span>
+        </div>
+      </div>
+      <div class="tag-group">
+        <span class="tag-group-label">AI / ML &amp; LLM</span>
+        <div class="tag-row">
+          <span class="tag">PyTorch</span>
+          <span class="tag">TensorFlow</span>
+          <span class="tag">Hugging Face</span>
+          <span class="tag">LangChain</span>
+          <span class="tag">RAG Pipelines</span>
+          <span class="tag">LLM Inference</span>
+        </div>
+      </div>
+      <div class="tag-group">
+        <span class="tag-group-label">Backend &amp; Cloud</span>
+        <div class="tag-row">
+          <span class="tag">.NET / C#</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Git &amp; CI/CD</span>
+          <span class="tag">REST APIs</span>
+        </div>
+      </div>
+      <div class="tag-group">
+        <span class="tag-group-label">Web &amp; Frontend</span>
+        <div class="tag-row">
+          <span class="tag">Angular</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRENTLY LEARNING: certifications and self-study in progress -->
+  <section id="learning" class="section">
+    <h2 class="section-title">Currently Learning</h2>
+    <p class="section-note">Ongoing study in applied generative AI, agentic systems, and Rust.</p>
+    <div class="numbered-list">
+      <div class="numbered-item">
+        <span class="numbered-index">01</span>
+        <div>
+          <h3>Generative AI Certification</h3>
+          <p>Exploring certification paths for applied generative AI across providers.</p>
+          <div class="cert-links">
+            <a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/" target="_blank" rel="noopener noreferrer" class="demo-link">Microsoft &#8599;</a>
+            <a href="https://www.databricks.com/learn/certification/genai-engineer-associate" target="_blank" rel="noopener noreferrer" class="demo-link">Databricks &#8599;</a>
+            <a href="https://aws.amazon.com/certification/certified-generative-ai-developer-professional/" target="_blank" rel="noopener noreferrer" class="demo-link">AWS &#8599;</a>
+          </div>
+        </div>
+      </div>
+      <div class="numbered-item">
+        <span class="numbered-index">02</span>
+        <div>
+          <h3>AI Agents</h3>
+          <p>Preparing for formal credentials in building, evaluating, and deploying reliable agentic AI systems.</p>
+          <div class="cert-links">
+            <a href="https://academy.langchain.com/pages/certifications-lcae" target="_blank" rel="noopener noreferrer" class="demo-link">LangChain &#8599;</a>
+            <a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/" target="_blank" rel="noopener noreferrer" class="demo-link">Microsoft &#8599;</a>
+            <a href="https://www.anthropic.com/learn" target="_blank" rel="noopener noreferrer" class="demo-link">Anthropic &#8599;</a>
+          </div>
+        </div>
+      </div>
+      <div class="numbered-item">
+        <span class="numbered-index">03</span>
+        <div>
+          <h3>Rust</h3>
+          <p>Following KAIST CS431 (previously CS492) to build systems-programming fluency through Rust.</p>
+          <div class="cert-links">
+            <a href="https://github.com/kaist-cp/cs431" target="_blank" rel="noopener noreferrer" class="demo-link">KAIST CS431 &#8599;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS: spotlight card with demo media + animated pipeline diagram -->
+  <section id="projects" class="section alt-bg">
+    <h2 class="section-title">Featured Project</h2>
+    <p class="section-note">Prism turns the sprawling IETF mailing-list archive into a searchable answer to one question: <em>why was this design decision made?</em></p>
+
+    <div class="project-spotlight">
+      <div class="project-media">
+        <img src="images/projects/prism-demo.gif" alt="Screen recording of Prism answering 'INIT_CWND should be 2', showing the located decision, its rationale, and mailing-list sources.">
+      </div>
+
+      <div class="project-diagram" id="prismDiagram">
+        <h3 class="subsection-title">How It Works</h3>
+        <p class="section-note" style="margin-bottom:16px;">Two imported corpora feed a three-stage retrieval-and-generation flow &mdash; based on the <a href="https://github.com/langgenius/dify">Dify Studio</a> build.</p>
+        <div class="pipeline-scroll">
+        <svg class="pipeline-svg" viewBox="0 0 860 620" role="img" aria-label="Prism pipeline. A decision corpus and a WG email corpus are built by crawling data via the ietfdata service. A user query searches the decision corpus to locate the decision. That decision is used to rewrite the query and retrieve the discussion from the WG email corpus by semantic search, and is also passed directly to the final synthesis step below. The synthesis stage generates a grounded explanation with two retries on failure, formats sources, and composes the final answer.">
+          <defs>
+            <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+              <path class="arrowhead-fill" d="M0,0 L6,3 L0,6 Z"></path>
+            </marker>
+          </defs>
+
+          <!-- Base: build the corpora -->
+          <text class="pipeline-outer-label" x="460" y="15" text-anchor="middle">Build the Corpora</text>
+          <rect x="355" y="1" width="30" height="17" rx="2" fill="#f5f5f5"></rect>
+          <image href="images/logos/ietf-logo.svg" x="358" y="3" width="24" height="12.75"><title>IETF</title></image>
+          <rect class="pipeline-outer-rect" x="90" y="25" width="760" height="170" rx="10"></rect>
+
+          <g class="pipeline-block-group" style="transition-delay:0s">
+            <rect class="pipeline-block-rect" x="110" y="35" width="340" height="140" rx="8"></rect>
+            <text class="pipeline-block-title" x="280" y="55" text-anchor="middle">Internet-Draft/RFC Design-Decision Corpus</text>
+            <g class="pipeline-icon-doc" transform="translate(424,42)"><title>RFC</title>
+              <path d="M2,1 L9,1 L12,4 L12,13 L2,13 Z"></path>
+              <path d="M9,1 L9,4 L12,4"></path>
+              <line x1="4" y1="7" x2="10" y2="7"></line>
+              <line x1="4" y1="10" x2="10" y2="10"></line>
+            </g>
+            <line class="pipeline-connector" x1="164" y1="105" x2="266" y2="105"></line>
+            <line class="pipeline-connector" x1="294" y1="105" x2="396" y2="105"></line>
+            <g class="pipeline-subnode">
+              <circle cx="150" cy="105" r="14"></circle>
+              <text class="sub-title" x="150" y="130" text-anchor="middle">Crawl Drafts</text>
+              <text class="sub-desc" x="150" y="142" text-anchor="middle">via ietfdata service</text>
+            </g>
+            <g class="pipeline-subnode">
+              <circle cx="280" cy="105" r="14"></circle>
+              <text class="sub-title" x="280" y="130" text-anchor="middle">Diff &amp; Label</text>
+              <text class="sub-desc" x="280" y="142" text-anchor="middle">track changes</text>
+            </g>
+            <g class="pipeline-subnode">
+              <circle cx="410" cy="105" r="14"></circle>
+              <text class="sub-title" x="410" y="130" text-anchor="middle">Index Keyword</text>
+              <text class="sub-desc" x="410" y="142" text-anchor="middle">BM25</text>
+            </g>
+          </g>
+
+          <g class="pipeline-block-group" style="transition-delay:0s">
+            <rect class="pipeline-block-rect" x="490" y="35" width="340" height="140" rx="8"></rect>
+            <text class="pipeline-block-title" x="660" y="55" text-anchor="middle">IETF WG Email Corpus</text>
+            <g class="pipeline-icon-mail" transform="translate(804,42)"><title>Mailing list</title>
+              <rect x="1" y="2" width="12" height="9" rx="1"></rect>
+              <path d="M1,3 L7,8 L13,3"></path>
+            </g>
+            <line class="pipeline-connector" x1="544" y1="105" x2="646" y2="105"></line>
+            <line class="pipeline-connector" x1="674" y1="105" x2="776" y2="105"></line>
+            <g class="pipeline-subnode">
+              <circle cx="530" cy="105" r="14"></circle>
+              <text class="sub-title" x="530" y="130" text-anchor="middle">Crawl Mailing List</text>
+              <text class="sub-desc" x="530" y="142" text-anchor="middle">via ietfdata service</text>
+            </g>
+            <g class="pipeline-subnode">
+              <circle cx="660" cy="105" r="14"></circle>
+              <text class="sub-title" x="660" y="130" text-anchor="middle">Embed</text>
+              <text class="sub-desc" x="660" y="142" text-anchor="middle">fine-tuned model</text>
+            </g>
+            <g class="pipeline-subnode">
+              <circle cx="790" cy="105" r="14"></circle>
+              <text class="sub-title" x="790" y="130" text-anchor="middle">Index Vector</text>
+              <text class="sub-desc" x="790" y="142" text-anchor="middle">semantic search</text>
+            </g>
+          </g>
+
+          <g class="pipeline-arrow-group" style="transition-delay:0.2s">
+            <line class="pipeline-arrow" x1="280" y1="176" x2="280" y2="227" marker-end="url(#arrowhead)"></line>
+          </g>
+          <g class="pipeline-arrow-group" style="transition-delay:0.2s">
+            <line class="pipeline-arrow" x1="660" y1="176" x2="660" y2="227" marker-end="url(#arrowhead)"></line>
+          </g>
+
+          <!-- User query enters -->
+          <g class="pipeline-subnode" style="transition-delay:0.35s">
+            <circle cx="80" cy="300" r="16"></circle>
+            <text class="sub-title" x="80" y="326" text-anchor="middle">User Query</text>
+          </g>
+          <g class="pipeline-arrow-group" style="transition-delay:0.35s">
+            <line class="pipeline-arrow" x1="97" y1="300" x2="139" y2="300" marker-end="url(#arrowhead)"></line>
+          </g>
+
+          <!-- Stage 1: Locate the Decision -->
+          <g class="pipeline-block-group" style="transition-delay:0.45s">
+            <rect class="pipeline-block-rect" x="140" y="230" width="280" height="140" rx="8"></rect>
+            <text class="pipeline-block-title" x="280" y="250" text-anchor="middle">1 &middot; Locate the Decision</text>
+            <line class="pipeline-connector" x1="194" y1="300" x2="266" y2="300"></line>
+            <line class="pipeline-connector" x1="294" y1="300" x2="366" y2="300"></line>
+            <g class="pipeline-subnode">
+              <circle cx="180" cy="300" r="14"></circle>
+              <text class="sub-title" x="180" y="325" text-anchor="middle">Keyword Search</text>
+              <text class="sub-desc" x="180" y="337" text-anchor="middle">vs. Decision Corpus</text>
+            </g>
+            <g class="pipeline-subnode">
+              <circle cx="280" cy="300" r="14"></circle>
+              <text class="sub-title" x="280" y="325" text-anchor="middle">Rank &amp; Select</text>
+              <text class="sub-desc" x="280" y="337" text-anchor="middle">&rarr; the decision</text>
+            </g>
+            <g class="pipeline-subnode">
+              <circle cx="380" cy="300" r="14"></circle>
+              <text class="sub-title" x="380" y="325" text-anchor="middle">Rewrite Query</text>
+              <text class="sub-desc" x="380" y="337" text-anchor="middle">decision &rarr; new query</text>
+            </g>
+          </g>
+
+          <g class="pipeline-arrow-group" style="transition-delay:0.65s">
+            <line class="pipeline-arrow" x1="420" y1="300" x2="517" y2="300" marker-end="url(#arrowhead)"></line>
+            <text class="pipeline-arrow-label" x="470" y="282" text-anchor="middle">the decision</text>
+            <text class="pipeline-arrow-sublabel" x="470" y="318" text-anchor="middle">(mail_query)</text>
+          </g>
+
+          <!-- Stage 2: Retrieve the Discussion -->
+          <g class="pipeline-block-group" style="transition-delay:0.75s">
+            <rect class="pipeline-block-rect" x="520" y="230" width="280" height="140" rx="8"></rect>
+            <text class="pipeline-block-title" x="660" y="250" text-anchor="middle">2 &middot; Retrieve the Discussion</text>
+            <line class="pipeline-connector" x1="594" y1="300" x2="726" y2="300"></line>
+            <g class="pipeline-subnode">
+              <circle cx="580" cy="300" r="14"></circle>
+              <text class="sub-title" x="580" y="325" text-anchor="middle">Embed Query</text>
+              <text class="sub-desc" x="580" y="337" text-anchor="middle">fine-tuned model</text>
+            </g>
+            <g class="pipeline-subnode">
+              <circle cx="740" cy="300" r="14"></circle>
+              <text class="sub-title" x="740" y="325" text-anchor="middle">Semantic Search</text>
+              <text class="sub-desc" x="740" y="337" text-anchor="middle">vs. WG Email Corpus</text>
+            </g>
+          </g>
+
+          <g class="pipeline-arrow-group" style="transition-delay:0.95s">
+            <line class="pipeline-arrow" x1="660" y1="370" x2="660" y2="438" marker-end="url(#arrowhead)"></line>
+            <text class="pipeline-arrow-label" x="675" y="400" text-anchor="start">the discussion</text>
+            <text class="pipeline-arrow-sublabel" x="675" y="412" text-anchor="start">(context)</text>
+          </g>
+
+          <!-- Stage 3: Synthesize the Answer (row two, directly below Stage 2) -->
+          <g class="pipeline-block-group" style="transition-delay:1.05s">
+            <rect class="pipeline-block-rect" x="520" y="440" width="280" height="140" rx="8"></rect>
+            <text class="pipeline-block-title" x="660" y="460" text-anchor="middle">3 &middot; Synthesize the Answer</text>
+            <line class="pipeline-connector" x1="574" y1="510" x2="646" y2="510"></line>
+            <line class="pipeline-connector" x1="674" y1="510" x2="746" y2="510"></line>
+            <g class="pipeline-subnode">
+              <circle cx="560" cy="510" r="14"></circle>
+              <text class="sub-title" x="560" y="535" text-anchor="middle">Explain, Grounded</text>
+              <text class="sub-desc" x="560" y="547" text-anchor="middle">retry &times;2</text>
+            </g>
+            <g class="pipeline-subnode">
+              <circle cx="660" cy="510" r="14"></circle>
+              <text class="sub-title" x="660" y="535" text-anchor="middle">Format Sources</text>
+              <text class="sub-desc" x="660" y="547" text-anchor="middle">dedup + score</text>
+            </g>
+            <g class="pipeline-subnode">
+              <circle cx="760" cy="510" r="14"></circle>
+              <text class="sub-title" x="760" y="535" text-anchor="middle">Compose Answer</text>
+              <text class="sub-desc" x="760" y="547" text-anchor="middle">decision + rationale</text>
+            </g>
+          </g>
+
+          <!-- Skip connection: the decision feeds the final answer directly, routed around the left -->
+          <g class="pipeline-skip-group" style="transition-delay:1.2s">
+            <path class="pipeline-skip-arrow" d="M280,370 L280,410 L500,410 L500,510 L517,510" marker-end="url(#arrowhead)"></path>
+            <text class="pipeline-skip-label" x="390" y="400" text-anchor="middle">the decision</text>
+          </g>
+        </svg>
+        </div>
+      </div>
+
+      <div class="project-text">
+        <h3>Prism</h3>
+        <p class="row-org">RFC Design-Decision Rationale Revealer</p>
+        <p>Ask why a network protocol standard was designed the way it was &mdash; Prism retrieves the mailing-list discussion behind a decision and grounds an LLM-generated explanation in that evidence.</p>
+        <div class="tag-row">
+          <span class="tag">RAG</span>
+          <span class="tag">LLM Retrieval</span>
+          <span class="tag">IETF / RFC</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS: research storyline, zig-zag with real thesis figures -->
+  <section id="publications" class="section">
+    <h2 class="section-title">Publications</h2>
+    <p class="section-note">Six papers from my PhD thesis, <em>Automated Extraction of Design-Decision Rationales in Internet Protocols</em> (University of Oslo) — each one builds on the last, from first dataset to a full retrieval-and-generation system.</p>
+
+    <div class="numbered-list pub-list">
+      <a class="numbered-item" href="https://ieeexplore.ieee.org/abstract/document/10624781" target="_blank" rel="noopener noreferrer">
+        <span class="numbered-index">01</span>
+        <div>
+          <span class="row-year">ICMLCN 2024</span>
+          <h3>Tell Me Why: Language Models Help Explain the Rationale Behind Internet Protocol Design</h3>
+          <p>Built the first dataset linking RFC/I-D design decisions to their rationale, and a baseline NLP method to connect them — the data and methodological foundation for the rest of the thesis.</p>
+        </div>
+      </a>
+      <a class="numbered-item" href="https://ieeexplore.ieee.org/abstract/document/10982058" target="_blank" rel="noopener noreferrer">
+        <span class="numbered-index">02</span>
+        <div>
+          <span class="row-year">IEEE Access</span>
+          <h3>Automated Insights Into GitHub Collaboration Dynamics</h3>
+          <p>Extended the approach to technical documentation and code, introducing an information-retrieval method (SIGIR) to link GitHub pull requests and issues — released as the CodeConvo dataset with open models on Hugging Face.</p>
+        </div>
+      </a>
+      <a class="numbered-item" href="https://link.springer.com/chapter/10.1007/978-3-031-97141-9_24" target="_blank" rel="noopener noreferrer">
+        <span class="numbered-index">03</span>
+        <div>
+          <span class="row-year">NLDB 2025</span>
+          <h3>Instruction Tuning TextFlow Semi-Automatic RFCs Generation</h3>
+          <p>Tested whether LLMs could draft and edit Internet-Draft text directly, introducing TextFlow — a dataset and instruction-tuned model for semi-automatic RFC editing.</p>
+        </div>
+      </a>
+      <a class="numbered-item" href="https://dl.acm.org/doi/abs/10.1145/3744200.3744761" target="_blank" rel="noopener noreferrer">
+        <span class="numbered-index">04</span>
+        <div>
+          <span class="row-year">ANRW 2025</span>
+          <h3>Empowering IETF Collaboration with NLP Search Innovations and LLM-Enhanced RFC Writing</h3>
+          <p>Brought the retrieval and generation work from Papers II and III together into one system — TextFlow Search and Edit — presented as a milestone summary of the thesis to the IETF research community.</p>
+        </div>
+      </a>
+      <a class="numbered-item" href="https://aclanthology.org/2026.lrec-1.568/" target="_blank" rel="noopener noreferrer">
+        <span class="numbered-index">05</span>
+        <div>
+          <span class="row-year">LREC 2026</span>
+          <h3>Linking Rationale to Decision on Internet Standards: A Retrieval-Based Approach Using Synthetic Data</h3>
+          <p>Moved from structured GitHub data to the messier IETF email archive, using synthetic data to train retrieval models robust enough to handle large-scale, unstructured discussion threads.</p>
+        </div>
+      </a>
+      <a class="numbered-item" href="https://dl.acm.org/doi/abs/10.1145/3774905.3795082" target="_blank" rel="noopener noreferrer">
+        <span class="numbered-index">06</span>
+        <div>
+          <span class="row-year">SemTech 2026</span>
+          <h3>Beyond the Rules: Understanding the Design Logic of Internet Standards</h3>
+          <p>Closed the loop with a full retrieval-augmented system that surfaces relevant email discussions and generates grounded, LLM-written explanations for why a design decision was made — validated with a dedicated evaluation protocol.</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="scholar-link-row">
+      <a href="https://scholar.google.com/citations?user=WMmX_cEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">View full Google Scholar profile &#8594;</a>
+    </div>
+  </section>
+
+  <!-- CONTACT: single centered column, no side card -->
+  <section id="contact" class="section alt-bg">
+    <h2 class="section-title center">Get In Touch</h2>
+    <div class="contact-icon-row">
+      <a href="https://github.com/cheop-byeon" target="_blank" rel="noopener noreferrer" class="contact-icon-btn" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M8 6 L3 12 L8 18"></path>
+          <path d="M16 6 L21 12 L16 18"></path>
+        </svg>
+        <span class="contact-icon-label">GitHub</span>
+      </a>
+      <a href="https://www.linkedin.com/in/jie-jessica-bian-60889351/" target="_blank" rel="noopener noreferrer" class="contact-icon-btn" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <text x="12" y="17" text-anchor="middle" font-size="13" font-weight="700" font-family="Arial, sans-serif" fill="currentColor">in</text>
+        </svg>
+        <span class="contact-icon-label">LinkedIn</span>
+      </a>
+      <a href="https://scholar.google.com/citations?user=WMmX_cEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="contact-icon-btn" aria-label="Google Scholar">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M2 9 L12 4 L22 9 L12 14 Z"></path>
+          <line x1="12" y1="14" x2="12" y2="19"></line>
+          <circle cx="12" cy="19" r="1" fill="currentColor" stroke="none"></circle>
+        </svg>
+        <span class="contact-icon-label">Scholar</span>
+      </a>
+      <a href="mailto:jiebi@uio.no" class="contact-icon-btn" aria-label="Email">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+          <path d="M2 6l10 7 10-7"></path>
+        </svg>
+        <span class="contact-icon-label">Email</span>
+      </a>
+    </div>
+    <p class="contact-location">Oslo, Norway</p>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p>&copy; <span id="year"></span> Jie (Jessica) Bian. All rights reserved.</p>
+  </div>
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
