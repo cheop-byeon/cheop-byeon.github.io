@@ -59,19 +59,5 @@ backToTop.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// Prism pipeline diagram — animate in once scrolled into view
-const prismDiagram = document.getElementById('prismDiagram');
-if (prismDiagram) {
-  const diagramObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        prismDiagram.classList.add('in-view');
-        diagramObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.35 });
-  diagramObserver.observe(prismDiagram);
-}
-
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
