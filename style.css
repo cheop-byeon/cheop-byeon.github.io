@@ -591,3 +591,19 @@ a.numbered-item:hover h3 { color: var(--gold); }
   .prism-feature-flow { grid-template-columns:1fr; }.prism-feature-flow>div { padding:20px 26px; border-right:0; border-bottom:1px solid #2d3d57; }.prism-feature-flow>div:last-child { border-bottom:0; }
   .prism-feature-tags { padding:20px 26px; }
 }
+
+/* Keep the publication list optional while retaining a direct Scholar link. */
+.publications-toggle > summary {
+  cursor: pointer;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  color: var(--navy);
+  font-size: .9rem;
+  font-weight: 600;
+}
+.publications-toggle > summary:hover { color: var(--gold); }
+.publications-toggle > summary:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
+.publications-hide, .publications-toggle[open] .publications-show { display: none; }
+.publications-toggle[open] .publications-hide { display: inline; }
+.publications-toggle .pub-list { margin-top: 16px; }
