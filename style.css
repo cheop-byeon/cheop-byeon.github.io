@@ -577,18 +577,12 @@ a.numbered-item:hover h3 { color: var(--gold); }
 .prism-open { display:inline-flex; align-items:center; gap:22px; border:1px solid #9cddf0; border-radius:6px; background:#9cddf0; color:#0b192b; font-size:13px; font-weight:700; padding:11px 17px; min-height:44px; }
 .prism-open:hover { background:#c3eef9; }
 .prism-feature a:focus-visible,.prism-feature [tabindex]:focus-visible { outline:2px solid #a7e9fa; outline-offset:5px; }
-.prism-feature-flow { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); border-top:1px solid #2d3d57; border-bottom:1px solid #2d3d57; background:#111d30; }
-.prism-feature-flow>div { padding:24px; border-right:1px solid #2d3d57; }.prism-feature-flow>div:last-child { border-right:0; }
-.prism-step { font:9px/1.5 "SF Mono",Menlo,monospace; letter-spacing:.06em; color:#8bdded; }
-.prism-feature-flow h4 { font-size:13px; font-weight:600; margin:10px 0 8px; }
-.prism-feature-flow p { color:#abbcd3; font-size:12px; line-height:1.7; margin:0; }
 .prism-feature-tags { display:flex; flex-wrap:wrap; gap:8px; padding:22px 28px; }
 .prism-feature-tags span { font-size:10px; color:#bbcae0; border:1px solid #34455f; padding:4px 9px; border-radius:4px; }
 @media(max-width:640px) {
   .prism-feature-top { grid-template-columns:1fr; padding:26px; gap:24px; }
   #prism-title { font-size:44px; }.prism-feature-heading { font-size:22px; }
   .prism-feature-art { max-width:220px; justify-self:center; }
-  .prism-feature-flow { grid-template-columns:1fr; }.prism-feature-flow>div { padding:20px 26px; border-right:0; border-bottom:1px solid #2d3d57; }.prism-feature-flow>div:last-child { border-bottom:0; }
   .prism-feature-tags { padding:20px 26px; }
 }
 
@@ -607,3 +601,30 @@ a.numbered-item:hover h3 { color: var(--gold); }
 .publications-hide, .publications-toggle[open] .publications-show { display: none; }
 .publications-toggle[open] .publications-hide { display: inline; }
 .publications-toggle .pub-list { margin-top: 16px; }
+
+/* Norsk Rom: a warm companion to the Prism project card. */
+.norsk-feature { display:grid; grid-template-columns:minmax(0,1.35fr) minmax(0,.85fr); align-items:center; gap:28px; margin-top:28px; padding:38px; border:1px solid #d6e2dc; border-radius:16px; background:#f5f4ed; color:#203d37; }
+.norsk-kicker { margin:0 0 18px; font:500 10px/1.7 "SF Mono",Menlo,monospace; letter-spacing:.1em; color:#466a61; }
+#norsk-title { font-family:inherit; font-size:44px; line-height:1.1; letter-spacing:-.045em; margin:0 0 20px; color:#203d37; }
+.norsk-heading { font-size:23px; font-weight:500; line-height:1.4; letter-spacing:-.025em; margin:0 0 18px; }
+.norsk-description { font-size:13px; line-height:1.85; color:#50665f; margin:0 0 15px; }
+.norsk-art img { display:block; width:100%; max-width:300px; height:auto; margin:auto; }
+.norsk-tags { display:flex; flex-wrap:wrap; gap:8px; margin-top:24px; }
+.norsk-tags span { font-size:10px; color:#466a61; border:1px solid #cad8d1; padding:4px 9px; border-radius:4px; }
+@media(max-width:640px) {
+  .norsk-feature { grid-template-columns:1fr; padding:26px; gap:24px; }
+  #norsk-title { font-size:38px; }
+  .norsk-art img { max-width:220px; }
+}
+
+.norsk-repo { display:inline-flex; align-items:center; gap:20px; margin-top:10px; padding:11px 17px; min-height:44px; border:1px solid #28584c; border-radius:6px; background:#28584c; color:#fff; font-size:13px; font-weight:700; }
+.norsk-repo:hover { background:#1e443a; color:#fff; }
+.norsk-repo:focus-visible { outline:2px solid #28584c; outline-offset:4px; }
+
+.prism-repo { display:inline-flex; align-items:center; gap:8px; min-height:44px; color:#cddaf0; font-size:13px; }
+.prism-repo:hover { color:#fff; text-decoration:underline; text-underline-offset:4px; }
+
+.project-credits { font-size:11px; line-height:1.7; margin:0; }
+.prism-credits { padding:0 28px 24px; color:#abbcd3; }
+.norsk-credits { margin-top:18px; color:#50665f; }
+@media(max-width:640px) { .prism-credits { padding:0 26px 24px; } }
