@@ -125,7 +125,7 @@ a { color: inherit; text-decoration: none; }
 .nav-mobile a { padding: 10px 0; color: var(--text-muted); border-bottom: 1px solid var(--border); }
 .nav-mobile a:hover { color: var(--navy); }
 
-@media (max-width: 720px) {
+@media (max-width: 1000px) {
   .nav-links { display: none; }
   .nav-toggle { display: block; }
 
@@ -621,10 +621,43 @@ a.numbered-item:hover h3 { color: var(--gold); }
 .norsk-repo:hover { background:#1e443a; color:#fff; }
 .norsk-repo:focus-visible { outline:2px solid #28584c; outline-offset:4px; }
 
-.prism-repo { display:inline-flex; align-items:center; gap:8px; min-height:44px; color:#cddaf0; font-size:13px; }
-.prism-repo:hover { color:#fff; text-decoration:underline; text-underline-offset:4px; }
+.prism-repo { display:inline-flex; align-items:center; gap:10px; min-height:44px; padding:11px 17px; border:1px solid #c4b5fd; border-radius:6px; background:#c4b5fd; color:#201b38; font-size:13px; font-weight:700; }
+.prism-repo:hover { background:#ddd3ff; border-color:#ddd3ff; color:#201b38; }
 
 .project-credits { font-size:11px; line-height:1.7; margin:0; }
 .prism-credits { padding:0 28px 24px; color:#abbcd3; }
 .norsk-credits { margin-top:18px; color:#50665f; }
 @media(max-width:640px) { .prism-credits { padding:0 26px 24px; } }
+
+/* Blog: original writing and reposts share the site's restrained typography. */
+.blog-columns { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:32px; }
+.blog-category { border-top:1px solid var(--border); padding-top:24px; }
+.blog-category h3 { margin:0 0 10px; font-size:1.1rem; color:var(--navy); }
+.blog-category p { font-size:.9rem; line-height:1.7; color:var(--text-muted); }
+.blog-category .blog-empty { margin-top:24px; font-size:.8rem; }
+@media(max-width:640px) { .blog-columns { grid-template-columns:1fr; gap:24px; } }
+
+.project-button-icon { flex-shrink:0; }
+.prism-open, .norsk-repo { gap:10px; }
+
+/* Hackathons: event and project entries belong together in this list. */
+.hackathon-list { border-top:1px solid var(--border); padding-top:24px; }
+.hackathon-empty { margin:0; color:var(--text-muted); font-size:.9rem; line-height:1.7; }
+
+.hackathon-entry { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.6fr); gap:36px; }
+.hackathon-entry h3 { color:var(--navy); font-size:1.15rem; line-height:1.4; margin:0 0 12px; }
+.hackathon-entry p { color:var(--text-muted); font-size:.88rem; line-height:1.8; margin:0 0 14px; }
+.hackathon-entry .hackathon-date { font-size:.78rem; margin-bottom:12px; }
+.hackathon-entry .hackathon-lead { color:var(--text); font-weight:600; }
+.hackathon-entry .hackathon-note { font-size:.78rem; }
+.hackathon-entry a { color:var(--navy); font-size:.85rem; font-weight:600; text-underline-offset:4px; }
+.hackathon-entry a:hover { text-decoration:underline; }
+.hackathon-tags { display:flex; flex-wrap:wrap; gap:8px; margin:18px 0; }
+.hackathon-tags span { color:var(--text-muted); font-size:.72rem; border:1px solid var(--border); padding:4px 9px; border-radius:4px; }
+.hackathon-project-link { display:inline-block; padding:10px 0; }
+@media(max-width:640px) { .hackathon-entry { grid-template-columns:1fr; gap:24px; } }
+
+.hackathon-entry + .hackathon-entry { margin-top:32px; padding-top:32px; border-top:1px solid var(--border); }
+.hackathon-links { display:flex; flex-wrap:wrap; gap:8px 24px; }
+
+.hackathons-toggle .hackathon-list { border-top:0; }
